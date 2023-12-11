@@ -1,0 +1,20 @@
+import 'package:equatable/equatable.dart';
+
+class CustomError extends Equatable{
+  final String code;
+  final String message;
+  final String plugin;
+
+  const CustomError({
+    this.code ="",
+    this.message='',
+    this.plugin="",w
+  });
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => [code,message,plugin];
+
+  @override
+  bool get stringify => true;
+}
